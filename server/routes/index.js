@@ -6,4 +6,9 @@ router.get("/test", (req, res) => {
   res.send({ test: "this is test!!" });
 });
 
+router.post("/idplz", (req, res) => {
+  const serverId = req.body.plzid;
+  console.log(serverId);
+});
+
 module.exports = router;
